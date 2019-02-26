@@ -1,0 +1,13 @@
+
+  <form method="POST" action="./update_value">
+    <input type="hidden" value="{{movie.name}}" name="oldname">
+    <input type="text" value="{{movie.name}}" name="newname">
+
+      <input type="hidden" value="{{movie.location}}" name="oldloaction">
+    <input type="text" value="{{movie.location}}" name="newlocation">
+
+      <input type="hidden" value="{{movie.time}}" name="oldtime">
+    <input type="text" value="{{movie.time}}" name="newtime">
+
+    <input type="submit" value="Update">
+  </form>

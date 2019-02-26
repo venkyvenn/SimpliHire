@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Movie Data</h1>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th>Movie Name</th>
+        <th>Location</th>
+        <th>Time</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for movie in movies %}
+    <tr>
+        <td>{{movie.name}}</td>
+        <td>{{movie.location}}</td>
+        <td>{{movie.time}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+
+</body>
+</html>
